@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Летний ивент Metro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="main-page">
+     <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html" class="clickable-logo">
+                    <img src="images/metro-logo.png" alt="Metro Logo" class="logo pulse">
+                    <h1>Летний ивент в метро</h1>
+                </a>
+            </div>
+            <div class="login-container">
+                <a href="login.html" class="login-btn">
+                    <span>Вход</span>
+                    <div class="btn-decoration"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="event-intro">
+            <h2>Присоединяйтесь к летнему ивенту</h2>
+            <p>С 1 по 30 июля отправляйтесь в опасное путешествие по туннелям московского метро.</p>
+            <div class="gas-mask-icon hover-glow"></div>
+        </section>
+
+        <section class="game-info">
+            <h3>О Metro Exodus</h3>
+            <p>Metro Exodus - это постапокалиптический шутер от первого лица, продолжение культовой серии Metro.</p>
+            
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <img src="images/screen1.jpg" alt="Metro Screenshot 1">
+                        <div class="slide-caption">
+                            <h3>Постапокалиптическая Москва</h3>
+                            <p>Исследуйте разрушенные станции метро и поверхность</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/screen4.jpg" alt="Metro Screenshot 2">
+                        <div class="slide-caption">
+                            <h3>Опасные мутанты</h3>
+                            <p>Сражайтесь с разнообразными мутантами и бандитами</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/screen3.jpg" alt="Metro Screenshot 3">
+                        <div class="slide-caption">
+                            <h3>Атмосферный геймплей</h3>
+                            <p>Погрузитесь в уникальную атмосферу вселенной Metro</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/screen2.jpg" alt="Metro Screenshot 4">
+                        <div class="slide-caption">
+                            <h3>Эпическое путешествие</h3>
+                            <p>Отправьтесь в путь через всю Россию на паровозе "Аврора"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="slider-dots" id="dotsContainer">
+                    <!-- Точки будут добавлены через JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="rewards">
+            <h3>Награды ивента</h3>
+            <div class="reward-items">
+                <div class="reward-item hover-scale">
+                    <img src="images/calendar-items/akm-rust.jpg" alt="AKM">
+                    <p>Эксклюзивный скин АКМ</p>
+                </div>
+                <div class="reward-item hover-scale">
+                    <img src="images/calendar-items/filter.png" alt="Gas Mask">
+                    <p>Золотой противогаз</p>
+                </div>
+                <div class="reward-item hover-scale">
+                    <img src="images/calendar-items/artyom.jpg" alt="Armor">
+                    <p>Броня "Спартанец"</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer class="metro-footer">
+    <div class="footer-cracks">
+        <div class="crack crack-1"></div>
+        <div class="crack crack-2"></div>
+        <div class="crack crack-3"></div>
+    </div>
+    
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="images/metro-logo.png" alt="Metro Logo" class="footer-logo-img">
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2025 Летний ивент Metro. Сидулов Павел
+            </p>
+            <div class="footer-warning">
+                <i class="fas fa-radiation"></i>
+                <span>Осторожно! Зона заражена</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-flicker"></div>
+    <div class="footer-dust"></div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

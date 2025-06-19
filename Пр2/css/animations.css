@@ -1,0 +1,188 @@
+.hover-glow:hover {
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.gas-mask-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.calendar-day.completed .reward-image {
+    animation: itemUnlock 0.5s ease-out;
+}
+
+@keyframes itemUnlock {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.calendar-day:not(.completed):hover .reward-image {
+    animation: itemHover 1.5s infinite;
+}
+
+@keyframes itemHover {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(139, 0, 0, 0.7));
+    }
+    50% {
+        filter: drop-shadow(0 0 15px rgba(139, 0, 0, 0.9));
+    }
+    100% {
+        filter: drop-shadow(0 0 5px rgba(139, 0, 0, 0.7));
+    }
+}
+
+.calendar-day:not(.completed) .reward-image {
+    filter: grayscale(80%) brightness(0.5);
+    transition: filter 0.3s ease;
+}
+
+.calendar-day:not(.completed):hover .reward-image {
+    filter: grayscale(50%) brightness(0.7);
+}
+
+.quest-item:hover {
+    animation: questPulse 1.5s infinite;
+}
+
+@keyframes questPulse {
+    0% {
+        box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(139, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+    }
+}
+/* Анимация пульсации для логотипа */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Эффект увеличения при наведении */
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Эффект свечения при наведении */
+.hover-glow {
+    transition: filter 0.3s ease;
+}
+
+.hover-glow:hover {
+    filter: drop-shadow(0 0 10px rgba(139, 0, 0, 0.9));
+}
+
+/* Эффект масштабирования при наведении */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+@keyframes btnPulse {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(139, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(139, 0, 0, 0.8);
+    }
+}
+
+.login-btn:hover {
+    animation: btnPulse 1.5s infinite;
+}
+
